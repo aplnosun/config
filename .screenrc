@@ -1,0 +1,25 @@
+# 상태바
+hardstatus alwayslastline
+hardstatus string "%{.kW}%-w%{.Wk}%n %t%{.kW}%+w %= %{..g} %m/%d %C:%s%a "
+
+# 색상 문제
+term xterm-256color
+defflow off
+
+# emacs를 사용하면 escape key를 C-z로
+#escape "^Zz"
+# 화면 맞춤 : fit을 한 사용자의 화면에 screen이 맞춰짐.
+#bind "^Z" fit
+
+# screen 번호를 1부터 시작
+bind c screen 1
+bind 0 select 10
+
+#multiuser on
+
+termcapinfo xterm* ti@:te@ 
+
+attrcolor b ".I" 
+termcapinfo xterm* 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+termcapinfo * 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce "on"
