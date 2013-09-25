@@ -1,12 +1,12 @@
 [user]
-	name = Name
-	email = id@email-address
+	name = arm10b
+	email = arm10b@iamroot.org
 
 [core]
 	editor = /usr/local/bin/vim
 	quotepath = false
-        autocrlf = input
-        whitespace = trailing-space,space-before-tab,indent-with-non-tab
+	autocrlf = input
+	whitespace = trailing-space,space-before-tab,indent-with-non-tab
 
 [merge]
 	tool = vimdiff
@@ -19,7 +19,7 @@
 	path = /usr/local/bin/vim
 	
 [color]
-        ui = true
+	ui = true
 
 [alias]
 	st = status -uno
@@ -28,8 +28,8 @@
 	unstage = reset HEAD --
 	recover = reset HEAD^ 
 	last = log -1 HEAD --stat
-        view = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ad)%C(reset) %C(White)%s%C(reset) %C(bold white)<%an>%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=short 
-        tree = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ad)%C(reset) %C(White)%s%C(reset) %C(bold white)<%an>%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=short --author='iamroot 10 ARM-B'
+	tree = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ad)%C(reset) %C(White)%s%C(reset) %C(bold white)<%an>%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=short 
+	view = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ad)%C(reset) %C(White)%s%C(reset) %C(bold white)<%an>%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=short --author='iamroot 10 ARM-B' --author='Seunghwan Chun' --author=KGJ
 
 [gui]
 	encoding = utf-8
